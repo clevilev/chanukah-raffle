@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Chanukah Raffle · Chabad of the Central Cascades</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Frank+Ruhl+Libre:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--night:#08132e;--navy:#12265a;--royal:#1f3f8f;--gold:#e2b44f;--gold-lt:#f8dc95;--gold-dk:#a8741a;--cream:#fbf6ea;--ink:#14204a;--muted:#4d5677;
+--display:Cinzel,Georgia,"Times New Roman",serif;--body:Montserrat,Arial,sans-serif;--serif:"Playfair Display",Georgia,serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);color:var(--ink);min-height:100vh;background:var(--cream) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cpath d='M45 33L55.4 51H34.6Z M45 57L34.6 39H55.4Z' fill='none' stroke='%23e2b44f' stroke-opacity='.2' stroke-width='1.2'/%3E%3C/svg%3E");}
+.hero{position:relative;overflow:hidden;text-align:center;padding:46px 20px 120px;color:#fff;
+  background:radial-gradient(circle at 50% 30%,rgba(255,170,70,.30) 0%,rgba(255,170,70,0) 45%),linear-gradient(160deg,#050d22 0%,#0d1d48 55%,#1b3679 100%);}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff 50%,transparent 51%),radial-gradient(1px 1px at 90px 80px,#f8dc95 50%,transparent 51%),radial-gradient(1.5px 1.5px at 160px 20px,#fff 50%,transparent 51%),radial-gradient(1px 1px at 200px 120px,#fff 50%,transparent 51%),radial-gradient(1px 1px at 60px 140px,#f8dc95 50%,transparent 51%);background-size:230px 180px;opacity:.6;animation:tw 4s ease-in-out infinite alternate;}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(180deg,rgba(251,246,234,0),var(--cream));pointer-events:none}
+@keyframes tw{from{opacity:.35}to{opacity:.75}}
+.bh{position:absolute;top:14px;right:18px;z-index:3;font-family:"Frank Ruhl Libre",Georgia,serif;font-size:15px;color:var(--gold-lt)}
+.menorah{position:relative;z-index:2;width:210px;margin:0 auto 18px;filter:drop-shadow(0 0 26px rgba(255,170,60,.45))}
+.menorah svg{display:block;width:100%;height:auto}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:fl 1.4s ease-in-out infinite alternate}
+.light:nth-child(2n) .flame{animation-duration:1.1s;animation-delay:-.4s}
+.light:nth-child(3n) .flame{animation-duration:1.7s;animation-delay:-.8s}
+@keyframes fl{from{transform:scale(1,1)}to{transform:scale(.86,1.12)}}
+.eyebrow{position:relative;z-index:2;font-size:11.5px;font-weight:700;letter-spacing:3.5px;text-wrap:balance;max-width:330px;margin:0 auto;text-transform:uppercase;color:var(--gold)}
+.eyebrow::after{content:"";display:block;width:40px;height:2px;margin:12px auto 0;background:var(--gold)}
+h1{position:relative;z-index:2;font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:2px;font-size:44px;line-height:1;margin:12px 0 14px;background:linear-gradient(180deg,#fff6d6 0%,#f8dc95 38%,#e2b44f 66%,#b98420 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 4px 18px rgba(255,170,70,.3))}
+.tagline{position:relative;z-index:2;max-width:400px;margin:0 auto;font-size:15.5px;line-height:1.55;color:#e9e2cf}
+.pill{position:relative;z-index:2;display:inline-block;margin-top:16px;padding:8px 18px;font-size:13px;font-weight:600;letter-spacing:1px;color:var(--gold-lt);border:1px solid rgba(226,180,79,.65);border-radius:40px;background:rgba(8,19,46,.5)}
+.main{position:relative;z-index:5;max-width:460px;margin:-96px auto 0;padding:0 16px 40px}
+.card{background:#fff;border-radius:20px;border-top:3px solid var(--gold);box-shadow:0 18px 44px rgba(8,19,46,.16);padding:26px 22px 22px}
+.card-head{display:none;margin-bottom:18px}
+body.embed .card-head{display:block}
+.card-title{font-family:var(--display);font-size:20px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-align:center;color:var(--ink)}
+.card-sub{text-align:center;font-family:var(--serif);font-style:italic;color:var(--muted);font-size:15px;margin-top:4px}
+.row{display:flex;gap:12px} .row .field{flex:1;min-width:0}
+.field{margin-bottom:14px}
+label{display:block;font-size:11.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--navy);margin-bottom:6px}
+label .opt{font-weight:500;letter-spacing:0;text-transform:none;color:#8a90a8}
+input{width:100%;font:inherit;font-size:16px;color:var(--ink);padding:13px 14px;border:1.5px solid #e6dcc3;border-radius:12px;outline:none;background:#fdfaf2;transition:.15s}
+input:focus{border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(226,180,79,.22)}
+button{width:100%;margin-top:6px;font-family:var(--body);font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding:17px;border:0;border-radius:40px;cursor:pointer;
+  color:var(--night);background:linear-gradient(180deg,var(--gold-lt) 0%,var(--gold) 60%,var(--gold-dk) 100%);box-shadow:0 10px 28px rgba(226,180,79,.4);transition:transform .2s,box-shadow .2s}
+button:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(226,180,79,.55)}
+button:disabled{opacity:.65;cursor:wait;transform:none}
+.err{display:none;background:#fef2f2;color:#b91c1c;border:1px solid #fecaca;padding:10px 12px;border-radius:10px;font-size:14px;margin-bottom:12px}
+.fine{text-align:center;font-size:12px;color:#8a90a8;margin-top:14px}
+.done{display:none;text-align:center;padding:6px 4px 4px}
+.done .icon{width:120px;margin:0 auto 10px}
+.done h2{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:1px;font-size:26px;color:var(--ink);margin-bottom:8px}
+.done p{color:var(--muted);font-size:15px;line-height:1.55}
+.done .tag{display:inline-block;margin-top:16px;font-family:var(--serif);font-style:italic;font-size:17px;color:var(--gold-dk)}
+.foot{text-align:center;font-size:12px;color:#8a90a8;margin-top:18px;letter-spacing:.5px}
+/* ---- embed mode: card only, sits on the landing page ---- */
+body.embed{min-height:0;background:transparent}
+body.embed .hero,body.embed .foot{display:none}
+body.embed .main{max-width:none;margin:0 auto;padding:6px 18px 30px}
+body.embed .card{box-shadow:0 8px 20px rgba(8,19,46,.12)}
+/* ---- success popup ---- */
+.pop{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(5,13,34,.72);backdrop-filter:blur(4px)}
+.pop.show{display:flex;animation:popFade .35s ease}
+@keyframes popFade{from{opacity:0}to{opacity:1}}
+.pop-box{position:relative;width:100%;max-width:380px;text-align:center;color:#fff;padding:30px 24px 26px;border-radius:22px;border:2px solid var(--gold);
+  background:radial-gradient(circle at 50% 0%,rgba(255,170,70,.32),rgba(255,170,70,0) 60%),linear-gradient(160deg,#0d1d48,#08132e);
+  box-shadow:0 0 0 10px rgba(226,180,79,.08),0 24px 60px rgba(0,0,0,.5);animation:popIn .6s cubic-bezier(.2,1.6,.4,1)}
+@keyframes popIn{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+.pop-box .menorah{width:150px;margin:0 auto 10px}
+.pop-eyebrow{font-size:11px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold)}
+.pop-title{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:1px;font-size:30px;line-height:1.05;margin:10px 0 10px;background:linear-gradient(180deg,#fff6d6 0%,#f8dc95 38%,#e2b44f 66%,#b98420 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pop-msg{font-size:15.5px;line-height:1.55;color:#e9e2cf}
+.pop-happy{font-family:var(--serif);font-style:italic;font-size:21px;color:var(--gold-lt);margin:14px 0 20px}
+.pop-box button{margin:0;max-width:220px}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:60}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="bh">&#1489;&#1524;&#1492;</div>
+  <div class="menorah"><svg viewBox="0 0 360 230" role="img" aria-label="Menorah" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="chGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbe3a1" /><stop offset="0.5" stop-color="#e2b44f" /><stop offset="1" stop-color="#a8741a" /></linearGradient><radialGradient id="chFlame" cx="0.5" cy="0.72" r="0.65"><stop offset="0" stop-color="#fffbe6" /><stop offset="0.4" stop-color="#ffd36b" /><stop offset="1" stop-color="#ff7a1a" /></radialGradient><radialGradient id="chGlowGrad"><stop offset="0" stop-color="#ffbe5a" stop-opacity="0.7" /><stop offset="1" stop-color="#ffbe5a" stop-opacity="0" /></radialGradient></defs><g stroke="url(#chGold)" stroke-width="5" stroke-linecap="round" fill="none"><path d="M180 182L40 76M180 182L320 76M180 160L75 76M180 160L285 76M180 138L110 76M180 138L250 76M180 116L145 76M180 116L215 76" /></g><g fill="url(#chGold)"><rect x="176" y="52" width="8" height="154" rx="3" /><path d="M140 224L220 224L206 204L154 204Z" /><rect x="30" y="70" width="20" height="6" rx="2" /><rect x="65" y="70" width="20" height="6" rx="2" /><rect x="100" y="70" width="20" height="6" rx="2" /><rect x="135" y="70" width="20" height="6" rx="2" /><rect x="205" y="70" width="20" height="6" rx="2" /><rect x="240" y="70" width="20" height="6" rx="2" /><rect x="275" y="70" width="20" height="6" rx="2" /><rect x="310" y="70" width="20" height="6" rx="2" /><rect x="170" y="46" width="20" height="6" rx="2" /></g><g fill="#fbf3e0"><rect x="36" y="42" width="8" height="28" rx="2" /><rect x="71" y="42" width="8" height="28" rx="2" /><rect x="106" y="42" width="8" height="28" rx="2" /><rect x="141" y="42" width="8" height="28" rx="2" /><rect x="211" y="42" width="8" height="28" rx="2" /><rect x="246" y="42" width="8" height="28" rx="2" /><rect x="281" y="42" width="8" height="28" rx="2" /><rect x="316" y="42" width="8" height="28" rx="2" /><rect x="176" y="24" width="8" height="22" rx="2" /></g><g class="light shamash" data-n="0"><circle class="glow" cx="180" cy="12" r="18" fill="url(#chGlowGrad)" /><path class="flame" d="M180 22C174 18 175 10 180 0C185 10 186 18 180 22Z" fill="url(#chFlame)" /></g><g class="light" data-n="1"><circle class="glow" cx="320" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M320 40C314 36 315 28 320 18C325 28 326 36 320 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="2"><circle class="glow" cx="285" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M285 40C279 36 280 28 285 18C290 28 291 36 285 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="3"><circle class="glow" cx="250" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M250 40C244 36 245 28 250 18C255 28 256 36 250 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="4"><circle class="glow" cx="215" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M215 40C209 36 210 28 215 18C220 28 221 36 215 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="5"><circle class="glow" cx="145" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M145 40C139 36 140 28 145 18C150 28 151 36 145 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="6"><circle class="glow" cx="110" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M110 40C104 36 105 28 110 18C115 28 116 36 110 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="7"><circle class="glow" cx="75" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M75 40C69 36 70 28 75 18C80 28 81 36 75 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="8"><circle class="glow" cx="40" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M40 40C34 36 35 28 40 18C45 28 46 36 40 40Z" fill="url(#chFlame)" /></g></svg></div>
+  <div class="eyebrow">Chabad of the Central Cascades</div>
+  <h1>The Chanukah Raffle</h1>
+  <p class="tagline">Enter for your chance to win. Happy Chanukah!</p>
+  <div class="pill">Winner drawn live after the menorah lighting</div>
+</header>
+
+<main class="main">
+  <div class="card">
+    <form id="f" novalidate>
+      <div class="card-head">
+        <div class="card-title">The Chanukah Raffle</div>
+        <div class="card-sub">Enter for your chance to win. Happy Chanukah!</div>
+      </div>
+      <div class="err" id="err"></div>
+      <div class="row">
+        <div class="field"><label for="first">First name</label><input id="first" autocomplete="given-name" required></div>
+        <div class="field"><label for="last">Last name</label><input id="last" autocomplete="family-name" required></div>
+      </div>
+      <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(425) 555-5555" required></div>
+      <div class="field"><label for="street">Street address</label><input id="street" autocomplete="street-address" placeholder="123 Main St" required></div>
+      <div class="row">
+        <div class="field" style="flex:1.6"><label for="city">City</label><input id="city" autocomplete="address-level2" placeholder="Issaquah" required></div>
+        <div class="field"><label for="zip">ZIP</label><input id="zip" inputmode="numeric" autocomplete="postal-code" maxlength="10" placeholder="98029" required></div>
+      </div>
+      <div class="field"><label for="email">Email <span class="opt">(optional)</span></label><input id="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+      <button id="btn" type="submit">Enter the Raffle</button>
+      <p class="fine">One entry per person &middot; Must be present to win</p>
+    </form>
+
+    <div class="done" id="done">
+      <div class="icon menorah"><svg viewBox="0 0 360 230" role="img" aria-label="Menorah" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="chGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbe3a1" /><stop offset="0.5" stop-color="#e2b44f" /><stop offset="1" stop-color="#a8741a" /></linearGradient><radialGradient id="chFlame" cx="0.5" cy="0.72" r="0.65"><stop offset="0" stop-color="#fffbe6" /><stop offset="0.4" stop-color="#ffd36b" /><stop offset="1" stop-color="#ff7a1a" /></radialGradient><radialGradient id="chGlowGrad"><stop offset="0" stop-color="#ffbe5a" stop-opacity="0.7" /><stop offset="1" stop-color="#ffbe5a" stop-opacity="0" /></radialGradient></defs><g stroke="url(#chGold)" stroke-width="5" stroke-linecap="round" fill="none"><path d="M180 182L40 76M180 182L320 76M180 160L75 76M180 160L285 76M180 138L110 76M180 138L250 76M180 116L145 76M180 116L215 76" /></g><g fill="url(#chGold)"><rect x="176" y="52" width="8" height="154" rx="3" /><path d="M140 224L220 224L206 204L154 204Z" /><rect x="30" y="70" width="20" height="6" rx="2" /><rect x="65" y="70" width="20" height="6" rx="2" /><rect x="100" y="70" width="20" height="6" rx="2" /><rect x="135" y="70" width="20" height="6" rx="2" /><rect x="205" y="70" width="20" height="6" rx="2" /><rect x="240" y="70" width="20" height="6" rx="2" /><rect x="275" y="70" width="20" height="6" rx="2" /><rect x="310" y="70" width="20" height="6" rx="2" /><rect x="170" y="46" width="20" height="6" rx="2" /></g><g fill="#fbf3e0"><rect x="36" y="42" width="8" height="28" rx="2" /><rect x="71" y="42" width="8" height="28" rx="2" /><rect x="106" y="42" width="8" height="28" rx="2" /><rect x="141" y="42" width="8" height="28" rx="2" /><rect x="211" y="42" width="8" height="28" rx="2" /><rect x="246" y="42" width="8" height="28" rx="2" /><rect x="281" y="42" width="8" height="28" rx="2" /><rect x="316" y="42" width="8" height="28" rx="2" /><rect x="176" y="24" width="8" height="22" rx="2" /></g><g class="light shamash" data-n="0"><circle class="glow" cx="180" cy="12" r="18" fill="url(#chGlowGrad)" /><path class="flame" d="M180 22C174 18 175 10 180 0C185 10 186 18 180 22Z" fill="url(#chFlame)" /></g><g class="light" data-n="1"><circle class="glow" cx="320" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M320 40C314 36 315 28 320 18C325 28 326 36 320 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="2"><circle class="glow" cx="285" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M285 40C279 36 280 28 285 18C290 28 291 36 285 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="3"><circle class="glow" cx="250" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M250 40C244 36 245 28 250 18C255 28 256 36 250 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="4"><circle class="glow" cx="215" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M215 40C209 36 210 28 215 18C220 28 221 36 215 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="5"><circle class="glow" cx="145" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M145 40C139 36 140 28 145 18C150 28 151 36 145 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="6"><circle class="glow" cx="110" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M110 40C104 36 105 28 110 18C115 28 116 36 110 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="7"><circle class="glow" cx="75" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M75 40C69 36 70 28 75 18C80 28 81 36 75 40Z" fill="url(#chFlame)" /></g><g class="light" data-n="8"><circle class="glow" cx="40" cy="30" r="17" fill="url(#chGlowGrad)" /><path class="flame" d="M40 40C34 36 35 28 40 18C45 28 46 36 40 40Z" fill="url(#chFlame)" /></g></svg></div>
+      <h2 id="doneTitle">You're in!</h2>
+      <p id="doneMsg">Your name is in the raffle. Stick around after the menorah lighting for the live drawing.</p>
+      <div class="tag">Happy Chanukah!</div>
+    </div>
+  </div>
+  <p class="foot">Chabad of the Central Cascades &middot; chabadissaquah.com</p>
+</main>
+
+<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="popTitle">
+  <div class="pop-box">
+    <div class="menorah" id="popMenorah"></div>
+    <div class="pop-eyebrow">The Chanukah Raffle</div>
+    <div class="pop-title" id="popTitle">Thank you for joining!</div>
+    <p class="pop-msg" id="popMsg">You're in the raffle. The winner will be drawn live after the menorah lighting.</p>
+    <div class="pop-happy">Happy Chanukah!</div>
+    <button type="button" id="popClose">Close</button>
+  </div>
+</div>
+<canvas id="fx"></canvas>
+
+<script>
+  /* ====== PASTE YOUR APPS SCRIPT WEB APP URL HERE (ends in /exec) ====== */
+  const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxoLioYiYR1R7uDyHBnSR86y46LcDS_AiH3OVN7vS4O3nu7ivwoKapiZYJAViYVXyQH/exec';
+  /* ===================================================================== */
+
+  const $ = id => document.getElementById(id);
+  // Inside an iframe (or ?embed=1): show just the card so it sits on the landing page
+  if (window.self !== window.top || /[?&]embed=1/.test(location.search)) document.body.classList.add('embed');
+
+  // Tell the parent page the form's height (optional auto-resize on the landing page)
+  function postHeight() {
+    try { window.parent.postMessage({ raffleFormHeight: document.documentElement.scrollHeight }, '*'); } catch (e) {}
+  }
+  addEventListener('load', postHeight); addEventListener('resize', postHeight);
+
+  $('phone').addEventListener('input', e => {
+    const d = e.target.value.replace(/\D/g, '').slice(0, 10);
+    e.target.value = d.length > 6 ? `(${d.slice(0,3)}) ${d.slice(3,6)}-${d.slice(6)}` : d.length > 3 ? `(${d.slice(0,3)}) ${d.slice(3)}` : d;
+  });
+  function showErr(m) { $('err').textContent = m; $('err').style.display = 'block'; postHeight(); }
+  function done(res) {
+    $('f').style.display = 'none'; $('done').style.display = 'block';
+    if (res.duplicate) {
+      $('doneTitle').textContent = 'Already entered!';
+      $('doneMsg').textContent = `Good news, ${res.first}: you're already in the raffle. Good luck!`;
+      $('popTitle').textContent = `You're already in, ${res.first}!`;
+      $('popMsg').textContent = 'Your name is already in the raffle. Stick around after the menorah lighting for the live drawing.';
+    } else {
+      $('doneTitle').textContent = `You're in, ${res.first}!`;
+      $('popTitle').textContent = `Thank you for joining, ${res.first}!`;
+    }
+    postHeight();
+    $('pop').classList.add('show'); $('popClose').focus();
+    streamers();
+  }
+  $('popMenorah').innerHTML = document.querySelector('.hero .menorah').innerHTML;
+  $('popClose').onclick = () => $('pop').classList.remove('show');
+  $('pop').addEventListener('click', e => { if (e.target === $('pop')) $('pop').classList.remove('show'); });
+
+  // Falling streamers + confetti in the landing page's gold, cream and royal blue
+  function streamers() {
+    const cv = $('fx'), cx = cv.getContext('2d'), dpr = window.devicePixelRatio || 1;
+    const W = innerWidth, H = innerHeight;
+    cv.width = W * dpr; cv.height = H * dpr; cx.scale(dpr, dpr);
+    const cols = ['#e2b44f', '#f8dc95', '#fff6d6', '#1f3f8f', '#ffffff', '#a8741a'];
+    const pick = a => a[Math.floor(Math.random() * a.length)];
+    const bits = [];
+    for (let i = 0; i < 150; i++) bits.push({ k: 'c', x: Math.random() * W, y: -20 - Math.random() * H, w: 5 + Math.random() * 6, h: 8 + Math.random() * 8,
+      vy: 1.8 + Math.random() * 2.6, vx: -1 + Math.random() * 2, r: Math.random() * 6, vr: -.15 + Math.random() * .3, c: pick(cols) });
+    for (let i = 0; i < 26; i++) bits.push({ k: 's', x: Math.random() * W, y: -40 - Math.random() * H * .8, len: 50 + Math.random() * 60,
+      vy: 1.6 + Math.random() * 1.8, ph: Math.random() * 6, amp: 6 + Math.random() * 8, c: pick(cols) });
+    for (let i = 0; i < 10; i++) bits.push({ k: 'f', x: Math.random() * W, y: -30 - Math.random() * H * .6, s: 8 + Math.random() * 6, vy: 1.2 + Math.random() * 1.4, vx: -.6 + Math.random() * 1.2 });
+    const end = performance.now() + 5500;
+    (function frame(now) {
+      cx.clearRect(0, 0, W, H);
+      const fade = Math.max(0, Math.min(1, (end - now) / 900));
+      cx.globalAlpha = fade;
+      for (const b of bits) {
+        b.y += b.vy;
+        if (b.k === 'c') { b.x += b.vx; b.r += b.vr; cx.save(); cx.translate(b.x, b.y); cx.rotate(b.r); cx.fillStyle = b.c; cx.fillRect(-b.w / 2, -b.h / 2, b.w, b.h); cx.restore(); }
+        else if (b.k === 's') {
+          b.ph += .08; cx.strokeStyle = b.c; cx.lineWidth = 3.5; cx.lineCap = 'round'; cx.beginPath();
+          for (let j = 0; j <= 10; j++) { const t = j / 10, yy = b.y - t * b.len, xx = b.x + Math.sin(b.ph + t * 5) * b.amp; j ? cx.lineTo(xx, yy) : cx.moveTo(xx, yy); }
+          cx.stroke();
+        } else {
+          b.x += b.vx; const g = cx.createRadialGradient(b.x, b.y, 0, b.x, b.y, b.s);
+          g.addColorStop(0, 'rgba(255,246,214,1)'); g.addColorStop(.35, 'rgba(255,195,90,.9)'); g.addColorStop(1, 'rgba(255,140,40,0)');
+          cx.fillStyle = g; cx.beginPath(); cx.arc(b.x, b.y, b.s, 0, Math.PI * 2); cx.fill();
+        }
+      }
+      cx.globalAlpha = 1;
+      if (now < end) requestAnimationFrame(frame); else cx.clearRect(0, 0, W, H);
+    })(performance.now());
+  }
+
+  $('f').addEventListener('submit', async e => {
+    e.preventDefault();
+    $('err').style.display = 'none';
+    const data = { first: $('first').value.trim(), last: $('last').value.trim(), phone: $('phone').value, street: $('street').value.trim(), city: $('city').value.trim(), zip: $('zip').value.trim(), email: $('email').value.trim() };
+    if (!data.first || !data.last) return showErr('Please enter your first and last name.');
+    if (data.phone.replace(/\D/g, '').length < 10) return showErr('Please enter a valid 10-digit phone number.');
+    if (!data.street || !data.city || !data.zip) return showErr('Please enter your full address.');
+    $('btn').disabled = true; $('btn').textContent = 'Entering…';
+    try {
+      // text/plain keeps this a "simple" request, so Apps Script accepts it with no CORS preflight
+      const r = await fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) });
+      const res = await r.json();
+      if (!res.ok) throw new Error(res.error || 'Something went wrong.');
+      done(res);
+    } catch (err) {
+      $('btn').disabled = false; $('btn').textContent = 'Enter the Raffle';
+      showErr(err.message && err.message !== 'Failed to fetch' ? err.message : 'Connection problem. Please try again.');
+    }
+  });
+</script>
+</body>
+</html>
